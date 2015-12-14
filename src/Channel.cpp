@@ -720,7 +720,7 @@ void CChannel::AddBacklogLine(const char *Source, const char *Message) {
 
 	m_BacklogCount++;
 
-	if (m_BacklogCount > 50) {
+	if (m_BacklogCount > 1000) {
 		link_t<backlog_t> *Head;
 
 		Head = m_Backlog.GetHead();
